@@ -26,7 +26,6 @@ public class Fireball extends Skills {
     public void use() {
         System.out.printf("%s is cast. It does %d damage, reaches %d ft, and uses %d mana.%n", name, damage, range, manaCost);
 
-
         //Check to see if burn is applied
         if (random.nextInt(100) < burnChance) {
             System.out.println("The target is burned!");
