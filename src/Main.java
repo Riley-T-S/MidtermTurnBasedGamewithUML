@@ -43,7 +43,3 @@ public class Main {
 
     }
 }
-
-// need more loops
-
-// needs to be interactive
