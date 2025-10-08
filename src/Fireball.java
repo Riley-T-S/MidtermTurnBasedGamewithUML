@@ -2,17 +2,17 @@ import java.util.Random;
 
 public class Fireball extends Skills {
 
-    //Components of Fireball
+    // Components of Fireball
     private String name;
     private int damage;
     private int range;
     private int manaCost;
     private int burnChance;
 
-    //Random generator for burn chance
+    // Random generator for burn chance
     private Random random = new Random();
 
-    //Constructing Fireball
+    // Constructing Fireball
     Fireball(String name) {
         super(name);
         this.name = name;
@@ -22,11 +22,11 @@ public class Fireball extends Skills {
         this.burnChance = 30; //30% chance to Burn
     }
 
-    //Allowing Fireball to be used
+    // Allowing Fireball to be used
     public void use() {
         System.out.printf("%s is cast. It does %d damage, reaches %d ft, and uses %d mana.%n", name, damage, range, manaCost);
 
-        //Check to see if burn is applied
+        // Check to see if burn is applied
         if (random.nextInt(100) < burnChance) {
             System.out.println("The target is burned!");
         } else {

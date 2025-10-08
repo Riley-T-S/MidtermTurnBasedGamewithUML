@@ -2,17 +2,17 @@ import java.util.Random;
 
 public class IceStorm extends Skills {
 
-    //Components of IceStorm
+    // Components of IceStorm
     private String name;
     private int damage;
     private int range;
     private int manaCost;
     private int freezeChance;
 
-    //Random generator for freeze chance
+    // Random generator for freeze chance
     private Random random = new Random();
 
-    //Constructing IceStorm
+    // Constructing IceStorm
     IceStorm(String name) {
         super(name);
         this.name = name;
@@ -22,11 +22,11 @@ public class IceStorm extends Skills {
         this.freezeChance = 30; //30% chance to freeze
     }
 
-    //Allowing IceStorm to be used
+    // Allowing IceStorm to be used
     public void use() {
         System.out.printf("%s is cast. It does %d damage, reaches %d ft, and uses %d mana.%n", name, damage, range, manaCost);
 
-        //Check to see if frozen is applied
+        // Check to see if frozen is applied
         if (random.nextInt(100) < freezeChance) {
             System.out.println("The target is frozen!");
         } else {
