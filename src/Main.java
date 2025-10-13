@@ -10,14 +10,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         MageSkills mageSkills = new MageSkills();
 
-
+        //This loop allows for the use of Mage Skills
         while (true) {
-            System.out.print("Enter the name of the spell you want to cast (or type 'quit' to exit): ");
+            System.out.print("Enter the name of the skill you want to use (or type 'quit' to exit): ");
             String input = scanner.nextLine().trim(); // Read input and remove extra spaces
 
             // Check if the user wants to quit
             if (input.equalsIgnoreCase("quit")) {
-                System.out.println("Exiting spell casting.");
+                System.out.println("Exiting skill usage.");
                 break; // Exit the loop
             }
 
@@ -32,7 +32,7 @@ public class Main {
             }
 
             if (chosenSpell != null) {
-                System.out.println("You chose to cast: " + chosenSpell.name);
+                System.out.println("You chose to use: " + chosenSpell.name);
                 chosenSpell.use();
             } else {
                 System.out.println("Spell not found. Please enter a valid spell name.");
