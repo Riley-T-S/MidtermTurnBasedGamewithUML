@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Creating a new Mage named Rune
-        Mage magicUser = new Mage("Rune");
+        Mage entity = new Mage("Rune");
 
-        magicUser.spawn();
+        entity.spawn();
 
         Scanner scanner = new Scanner(System.in);
         MageSkills mageSkills = new MageSkills();
@@ -43,6 +43,9 @@ public class Main {
         }
 
         scanner.close();
+        // Using mana to cast spells
+        //TODO: I plan to deal with this eventually
+        //if (magicUser
 
     }
 }

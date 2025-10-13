@@ -1,4 +1,4 @@
-public class Mage {
+public class Mage extends Entity {
 
     private String name;
     private int health;
@@ -6,7 +6,8 @@ public class Mage {
     protected MageSkills skills;
 
     // Mage Constructor
-        Mage(String name) {
+        Mage(String name, int health, int mana) {
+            super (name, health, mana);
             this.name = name;
             this.health = 80;
             this.mana = 150;
