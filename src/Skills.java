@@ -14,6 +14,4 @@ public abstract class Skills {
     // Allows skills to be used
     public abstract void use();
 
-
-
 }

@@ -13,12 +13,14 @@ public class Main {
         //This loop allows for the use of Mage Skills
         while (true) {
             System.out.print("Enter the name of the skill you want to use (or type 'quit' to exit): ");
-            String input = scanner.nextLine().trim(); // Read input and remove extra spaces
+            // Read input and remove extra spaces
+            String input = scanner.nextLine().trim();
 
             // Check if the user wants to quit
             if (input.equalsIgnoreCase("quit")) {
                 System.out.println("Exiting skill usage.");
-                break; // Exit the loop
+                // Exit the loop
+                break;
             }
 
             Skills chosenSpell = null;
@@ -26,7 +28,8 @@ public class Main {
             // Search for a spell with a matching name (case-insensitive)
             for (Skills spell : mageSkills.spells) {
                 if (spell.name.equalsIgnoreCase(input)) {
-                    chosenSpell = spell; // Spell found
+                    // Spell found
+                    chosenSpell = spell;
                     break;
                 }
             }

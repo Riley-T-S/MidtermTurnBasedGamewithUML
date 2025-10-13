@@ -14,7 +14,8 @@ public class Mage {
         }
         // Allows our Mage to spawn
             void spawn() {
-                System.out.printf("%s spawns in. %s has %d health and %d mana. %s also has access to %s%n", name, name, health, mana, name, skills);
+                System.out.printf("%s spawns in. %s has %d health and %d mana. " + "%s also has access to %s%n",
+                        name, name, health, mana, name, skills);
              }
 
 }
